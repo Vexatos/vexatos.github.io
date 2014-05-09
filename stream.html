@@ -19,11 +19,11 @@
         var url=document.URL;
         if (url.indexOf("?v=") != -1){
             var vid = url.split("v=")[1].split("&")[0];
-            document.write("<div style=\"float:left;\" align=\"left\"><iframe style=\"position: relative; top:8px; left:0px; width:853px; height:480px;\" name=\"YouTube\" width=\"853\" height=\"480\" src=http://www.youtube.com/embed/"
+            document.write("<div style=\"float:left; width:853px; height:500px;\" align=\"left\"><iframe style=\"position: relative; top:8px; left:0px; width:853px; height:480px;\" name=\"YouTube\" width=\"853\" height=\"480\" src=http://www.youtube.com/embed/"
             + vid + "?rel=0 frameborder=\"0\" allowfullscreen></iframe></div>");
         } else {
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            document.write("<div style=\"float:left; position: relative; top:100px; width:853px; height:380px; border:1;\" align=\"center\"><font color=\"red\">ERROR:</font> You did not specify a video ID!<BR><div align=\"center\"><a class=\"twitter-timeline\" align=\"center\" height=\"350\" data-dnt=\"true\" href=\"https://twitter.com/search?q=%23livestream+from%3AVaygrim\" data-widget-id=\"463738422134177793\"></a></div></div>");
+            document.write("<div style=\"float:left; position: relative; top:100px; width:853px; height:500px; border:1;\" align=\"center\"><font color=\"red\">ERROR:</font> You did not specify a video ID!<BR><div align=\"center\"><a class=\"twitter-timeline\" align=\"center\" height=\"350\" data-dnt=\"true\" href=\"https://twitter.com/search?q=%23livestream+from%3AVaygrim\" data-widget-id=\"463738422134177793\"></a></div></div>");
         }
     </script>
     <div style="float:right;" align="right">

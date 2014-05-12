@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="https://raw.githubusercontent.com/Vaygrim/vaygrim.github.io/master/vaygrim.ico">
-    <meta charset="utf-8">
-    <title>Vaygrim's streams</title>
-    <style type="text/css">
-        body{background-color:#D3D3D3;}
-        <!--
-        iframe {
-        background-color:#D3D3D3;
-        margin:20px;
-        }
-        -->
-    </style>
+	<link rel="icon" href="https://raw.githubusercontent.com/Vaygrim/vaygrim.github.io/master/vaygrim.ico">
+	<meta charset="utf-8">
+	<title>Vaygrim's streams</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <script language="JavaScript" type="text/javascript">
-        var url=document.URL;
-        if (url.indexOf("?v=") != -1){
-            var vid = url.split("v=")[1].split("&")[0];
-            document.write("<div style=\"float:left; width:853px; height:500px;\" align=\"left\"><iframe style=\"position: relative; top:8px; left:0px; width:853px; height:480px;\" name=\"YouTube\" width=\"853\" height=\"480\" src=http://www.youtube.com/embed/"
-            + vid + "?rel=0 frameborder=\"0\" allowfullscreen></iframe></div>");
-        } else {
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            document.write("<div style=\"float:left; position: relative; top:100px; width:853px; height:500px; border:1;\" align=\"center\"><font color=\"red\">ERROR:</font> You did not specify a video ID!<BR><div align=\"center\"><a class=\"twitter-timeline\" align=\"center\" height=\"350\" data-dnt=\"true\" href=\"https://twitter.com/search?q=%23livestream+from%3AVaygrim\" data-widget-id=\"463738422134177793\"></a></div></div>");
-        }
-    </script>
-    <div style="float:right; height:81%;" align="right">
-        <iframe style="position: relative; top:8px; right:20px; width:380px; height:81%; min-height:480px; border:1;" name="kiwiIRC" scrolling="no" src="https://kiwiirc.com/client/irc.esper.net/?nick=Guest|?&theme=relaxed#Vaygrim"></iframe>
-        <div style="position: relative; right:90px; width:300px; height:20px" align="center">
-            If something doesn't show correctly, make sure you have cookies enabled!<BR>
-            <a href="http://vaygrim.github.io/" target="_blank">Home</a> | <a href="http://vaygrim.github.io/credits" target="_blank">Credits</a>
-        </div>
-    </div>
-    <!--Nope><iframe src="http://webchat.esper.net/?nick=StreamUser....&channels=Vaygrim&fg_color=000000&fg_sec_color=000000&bg_color=ffffff&prompt=1" width="350" height="500"></iframe><!-->
-    <!--Nope><iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=Vaygrim&amp;popout_chat=true" height="500" width="350"></iframe><!-->
+	<div id="main" class="center">
+		<h1>Stream</h1>
+	
+	<div class="stream">
+		<script language="JavaScript" type="text/javascript">
+			var url=document.URL;
+			if (url.indexOf("?v=") != -1){
+				var vid = url.split("v=")[1].split("&")[0];
+				document.write("<iframe name=\"YouTube\" src=http://www.youtube.com/embed/" + vid + "?rel=0 frameborder=\"0\" allowfullscreen></iframe>");
+			} else {
+				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+				document.write("<span class=\"error\">ERROR: You did not specify a video ID!</span>");
+			}
+		</script>
+		
+		<div class="stream-chat">
+			<iframe name="kiwiIRC" scrolling="no" src="https://kiwiirc.com/client/irc.esper.net/?nick=Guest|?&theme=relaxed#Vaygrim"></iframe>
+		</div>
+	</div>
+	
+	<div class="stream-footer">
+		<p>If something doesn't show correctly, make sure you have cookies enabled!</p>
+			<a class="button" href="index.html">Home</a><a class="button" href="credits.html">Credits</a><BR>
+	</div>
+	</div>
+	<!--Nope><iframe src="http://webchat.esper.net/?nick=StreamUser....&channels=Vaygrim&fg_color=000000&fg_sec_color=000000&bg_color=ffffff&prompt=1" width="350" height="500"></iframe><!-->
+	<!--Nope><iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=Vaygrim&amp;popout_chat=true" height="500" width="350"></iframe><!-->
 </body>
 </html>

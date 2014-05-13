@@ -51,7 +51,6 @@ a:focus {
 
 #main {
 	background-color: #fefefe;
-	width: 1560px;
 	padding: 20px;
 	margin: 20px auto;
 	box-shadow: 0 0 4px rgba(0,0,0,0.1);
@@ -68,6 +67,32 @@ a:focus {
 #main p {
 	margin: 0.5em 0;
 }
+
+.stream iframe {
+	width: 920px;
+	height: 480px;
+}
+
+.stream-chat {
+	float: right;
+    height:81%;
+}
+
+.stream-chat iframe {
+    position:relative;
+	float: right;
+    width: 380px;
+    height: 81%;
+    min-height:480px;
+    max-width: 380px;
+    border:1;
+}
+
+.stream-footer {
+	padding-top: 0px;
+	clear: both;
+}
+
 
 .button {
 	display: inline-block;
@@ -99,21 +124,38 @@ a:focus {
 	text-align: center;
 }
 
+.left {
+    float: left;
+}
+
 .clear {
 	clear: both;
 }
 
 @media (max-width: 1600px) {
 	#main {
-		width: 900px;
+        float:center;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	
+	.stream iframe {
+        float:left;
+        width: 853px;
+        height:480px;
+	}
+	
+	.stream-chat {
+		float: right;
+		width: 380px;
+        max-width: 380px;
+        height: 81%;
+        min-height:480px;
 	}
 }
 
 @media (max-width: 920px) {
 	#main {
-		width: 96%;
 		padding-left: 2%;
 		padding-right: 2%;
 	}

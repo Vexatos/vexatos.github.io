@@ -5,12 +5,10 @@
 	<meta charset="utf-8">
 	<title>Vaygrim's streams</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300|Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="stream.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="main" class="center">
-		<h1>Stream</h1>
-	
 	<div class="stream">
 		<script language="JavaScript" type="text/javascript">
 			var url=document.URL;
@@ -19,19 +17,17 @@
 				document.write("<iframe name=\"YouTube\" src=http://www.youtube.com/embed/" + vid + "?rel=0 frameborder=\"0\" allowfullscreen></iframe>");
 			} else {
 				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				document.write("<span class=\"error\">ERROR: You did not specify a video ID!</span>");
+				document.write("<a class=\"twitter-timeline\" align=\"center\" height=\"350\" data-dnt=\"true\" href=\"https://twitter.com/search?q=%23livestream+from%3AVaygrim\" data-widget-id=\"463738422134177793\">Vaygrim's Livestream tweets</a>");
 			}
 		</script>
-		
 		<div class="stream-chat">
 			<iframe name="kiwiIRC" scrolling="no" src="https://kiwiirc.com/client/irc.esper.net/?nick=Guest|?&theme=relaxed#Vaygrim"></iframe>
 		</div>
 	</div>
-	
-	<div class="stream-footer">
-		<p>If something doesn't show correctly, make sure you have cookies enabled!</p>
-			<a class="button" href="index.html">Home</a><a class="button" href="credits.html">Credits</a><BR>
-	</div>
+        <div class="stream-footer">
+            <p>If something doesn't show correctly, make sure you have cookies enabled!</p>
+			<a class="button" href="index.html" target="_blank">Home</a><a class="button" href="credits.html" target="_blank">Credits</a><BR>
+        </div>
 	</div>
 	<!--Nope><iframe src="http://webchat.esper.net/?nick=StreamUser....&channels=Vaygrim&fg_color=000000&fg_sec_color=000000&bg_color=ffffff&prompt=1" width="350" height="500"></iframe><!-->
 	<!--Nope><iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=Vaygrim&amp;popout_chat=true" height="500" width="350"></iframe><!-->
